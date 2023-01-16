@@ -1,0 +1,120 @@
+.support {
+   padding: 103px 36px 118px 19px;
+   .support-box {
+      display: block;
+      max-width: fit-content;
+      position: relative;
+      padding: 50.93px 75.89px 32.81px 31px;
+      margin: 53px auto 44px;
+
+      .square-1 {
+         bottom: 10px;
+         left: 15px;
+         width: 65.75px;
+         height: 65.75px;
+         border-radius: 16px;
+         transform: rotate(-30deg);
+      }
+
+      .square-2 {
+         top: 10px;
+         left: 240px;
+         width: 100px;
+         height: 100px;
+         transform: rotate(105deg);
+      }
+
+      .square-3 {
+         bottom: 20px;
+         right: 20px;
+         width: 127.5px;
+         height: 127.5px;
+         transform: rotate(-30deg);
+      }
+   }
+
+   .box-content {
+      background-color: #fff;
+      box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+      border-radius: 16px;
+      max-width: 654px;
+      display: flex;
+      
+   }
+
+   .box-info {
+      position: relative;
+      width: 494px;
+      min-height: 61px;
+      display: flex;
+      justify-content: space-between;
+      margin: 28px 81px;
+      
+      &-text {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &-content {
+      display: flex;
+      align-items: center;
+
+      &__info {
+         padding: 0 0 20px 0;
+         flex: 0 1 50%;
+      }
+
+      &__video {
+         flex: 0 1 50%;
+         position: relative;
+         padding-bottom: 30%;
+         iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+         }
+      }
+   }
+
+}
+
+@media screen and (max-width: 720px) {
+   .support {
+
+      .box-content {
+         height: 300px;
+      }
+
+      .box-info {
+         flex-direction: column;
+         margin: 0;
+         justify-content: space-evenly;
+      }
+
+      .support-box {
+         .square-2 {
+            left: 75px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .support-content {
+      flex-direction: column;
+      align-items: stretch;
+
+      &__info {
+         text-align: center;
+      }
+
+      &__video {
+         padding-bottom: 60%;
+      }
+   }
+}
